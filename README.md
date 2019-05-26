@@ -14,4 +14,6 @@ A Flutter application.
 
 [6 -  Manejar las preferencias del usuario](../../tree/65cb7fb995bac0c616aafa6198a0b6e5501c152f/)
 
+[7 -  Preferencias de nombre, género y color secundario](../../tree/685a13b4a0ed93e32e0462771bb9fc2aefdba0cf/)
+
 

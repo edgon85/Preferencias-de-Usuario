@@ -13,13 +13,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final prefs = new PreferenciasUsuario();
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
     /*  theme: ThemeData(
         primarySwatch: Colors.blue,
       ),*/
-    initialRoute: HomePage.routeName,
+    initialRoute: prefs.ultimaPagina,
       routes: {
         HomePage.routeName : (BuildContext context) => HomePage(),
         SettingsPage.routeName : (BuildContext context) => SettingsPage(),
