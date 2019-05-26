@@ -10,3 +10,6 @@ A Flutter application.
 
 [4 -  Diseño de la página de ajustes](../../tree/f87a7d757df96eb459cdf5593026287e8d896e42/)
 
+[5 -  Shared Preferences](../../tree/d66649bad43040a1382be5905e92808e4b424e7b/)
+
+
