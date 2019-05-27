@@ -10,7 +10,6 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
-
   final prefs = new PreferenciasUsuario();
 
   bool _colorSecundario;
@@ -28,9 +27,7 @@ class _SettingsPageState extends State<SettingsPage> {
     _textController = new TextEditingController(text: prefs.nombreUsuario);
   }
 
-
   _setSelectedRadio(int valor) async {
-
     setState(() {
       prefs.genero = valor;
       _genero = valor;

@@ -1,9 +1,10 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PreferenciasUsuario {
-  static final PreferenciasUsuario _instancia = new PreferenciasUsuario._internal();
+  static final PreferenciasUsuario _instancia =
+      new PreferenciasUsuario._internal();
 
-  factory PreferenciasUsuario(){
+  factory PreferenciasUsuario() {
     return _instancia;
   }
 
@@ -11,43 +12,43 @@ class PreferenciasUsuario {
 
   SharedPreferences _prefs;
 
-  initPref() async{
+  initPref() async {
     _prefs = await SharedPreferences.getInstance();
   }
 
   // get y set del genero
-  get genero{
+  get genero {
     return _prefs.getInt('genero') ?? 1;
   }
 
-  set genero(int value){
+  set genero(int value) {
     _prefs.setInt('genero', value);
   }
 
   // GET y SET _colorSecundario
-  get colorSecundario{
+  get colorSecundario {
     return _prefs.getBool('colorSecundario') ?? false;
   }
 
-  set colorSecundario(bool value){
+  set colorSecundario(bool value) {
     _prefs.setBool('colorSecundario', value);
   }
 
   // GET y SET Nombre usuario
-  get nombreUsuario{
+  get nombreUsuario {
     return _prefs.getString('nombreUsuario') ?? '';
   }
 
-  set nombreUsuario(String value){
+  set nombreUsuario(String value) {
     _prefs.setString('nombreUsuario', value);
   }
 
   // GET y SET de la última página
-  get ultimaPagina{
+  get ultimaPagina {
     return _prefs.getString('ultimaPagina') ?? 'home';
   }
 
-  set ultimaPagina(String value){
+  set ultimaPagina(String value) {
     _prefs.setString('ultimaPagina', value);
   }
 }

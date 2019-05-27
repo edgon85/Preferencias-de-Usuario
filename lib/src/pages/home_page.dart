@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:preferencias_de_usuario_app/src/share_pref/preferencias_usuario.dart';
 import 'package:preferencias_de_usuario_app/src/widgets/drawer_widget.dart';
 
-
 class HomePage extends StatelessWidget {
   static final String routeName = 'home';
   final prefs = new PreferenciasUsuario();
 
   @override
   Widget build(BuildContext context) {
-
     prefs.ultimaPagina = HomePage.routeName;
 
     return Scaffold(
@@ -31,6 +29,4 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-
-
 }

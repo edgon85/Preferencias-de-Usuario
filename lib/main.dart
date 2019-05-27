@@ -15,15 +15,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final prefs = new PreferenciasUsuario();
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Preferencias de usuario',
       debugShowCheckedModeBanner: false,
-    /*  theme: ThemeData(
+      /*  theme: ThemeData(
         primarySwatch: Colors.blue,
       ),*/
-    initialRoute: prefs.ultimaPagina,
+      initialRoute: prefs.ultimaPagina,
       routes: {
-        HomePage.routeName : (BuildContext context) => HomePage(),
-        SettingsPage.routeName : (BuildContext context) => SettingsPage(),
+        HomePage.routeName: (BuildContext context) => HomePage(),
+        SettingsPage.routeName: (BuildContext context) => SettingsPage(),
       },
     );
   }

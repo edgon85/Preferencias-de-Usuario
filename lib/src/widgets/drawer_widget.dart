@@ -14,36 +14,41 @@ class MenuWidget extends StatelessWidget {
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage('assets/images/menu-img.jpg'),
-                    fit: BoxFit.cover)
-            ),
+                    fit: BoxFit.cover)),
           ),
-
           ListTile(
-            leading: Icon(Icons.home, color: Colors.blue,),
+            leading: Icon(
+              Icons.home,
+              color: Colors.blue,
+            ),
             title: Text('Home'),
-            onTap: (){
+            onTap: () {
               return Navigator.pushNamed(context, HomePage.routeName);
             },
           ),
-
-
           ListTile(
-            leading: Icon(Icons.party_mode, color: Colors.blue,),
+            leading: Icon(
+              Icons.party_mode,
+              color: Colors.blue,
+            ),
             title: Text('Party mode'),
-            onTap: (){},
+            onTap: () {},
           ),
-
-
           ListTile(
-            leading: Icon(Icons.pages, color: Colors.blue,),
+            leading: Icon(
+              Icons.pages,
+              color: Colors.blue,
+            ),
             title: Text('People'),
-            onTap: (){},
+            onTap: () {},
           ),
-
           ListTile(
-            leading: Icon(Icons.settings, color: Colors.blue,),
+            leading: Icon(
+              Icons.settings,
+              color: Colors.blue,
+            ),
             title: Text('Settings'),
-            onTap: (){
+            onTap: () {
               Navigator.pushReplacementNamed(context, SettingsPage.routeName);
             },
           )
